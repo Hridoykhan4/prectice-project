@@ -5,9 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSSProject</title>
     <link rel="stylesheet" href="css/main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body class="bg-[#2B2D33]">
-
     <nav class="shadow-2xl sticky top-0 z-10">
       <div class="container mx-auto">
         <div class="sm:flex justify-between items-center py-5">
@@ -65,32 +76,19 @@
           </button>
         </div>
         <div>
-          <img
-            class="animate-pulse"
-            src="./images/hero-img.png"
-            alt=""
-          />
+          <img class="animate-pulse" src="./images/hero-img.png" alt="" />
         </div>
       </div>
     </header>
 
-
-
     <main class="container mx-auto">
-
       <section class="my-24">
-
         <h1 class="text-white text-center text-3xl mb-12">Our services</h1>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-          
           <div
             class="bg-gray-600 p-8 rounded-lg text-center border-4 border-[#1F2937] hover:border-indigo-700 cursor-pointer"
           >
-            <img
-              class="w-1/2 mx-auto"
-              src="./images/frontEnd.png"
-              alt=""
-            />
+            <img class="w-1/2 mx-auto" src="./images/frontEnd.png" alt="" />
             <h4 class="text-white text-lg underline underline-offset-4 my-4">
               Front End Development
             </h4>
@@ -99,16 +97,11 @@
               Accusantium aperiam porro molestias! Animi, a omnis?
             </p>
           </div>
-          
-          
+
           <div
             class="bg-gray-600 p-8 rounded-lg text-center border-4 border-[#1F2937] hover:border-indigo-700 cursor-pointer"
           >
-            <img
-              class="w-1/2 mx-auto"
-              src="./images/backEnd.png"
-              alt=""
-            />
+            <img class="w-1/2 mx-auto" src="./images/backEnd.png" alt="" />
             <h4 class="text-white text-lg underline underline-offset-4 my-4">
               Back End Development
             </h4>
@@ -117,70 +110,50 @@
               Accusantium aperiam porro molestias! Animi, a omnis?
             </p>
           </div>
-          
-          
+
           <div
             class="bg-gray-600 p-8 rounded-lg text-center border-4 border-[#1F2937] hover:border-indigo-700 cursor-pointer"
           >
-            <img
-              class="w-1/2 mx-auto"
-              src="./images/javascript.png"
-              alt=""
-            />
+            <img class="w-1/2 mx-auto" src="./images/javascript.png" alt="" />
             <h4 class="text-white text-lg underline underline-offset-4 my-4">
-             Javascript complete course
+              Javascript complete course
             </h4>
             <p class="white">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Accusantium aperiam porro molestias! Animi, a omnis?
             </p>
           </div>
-         
-         
+
           <div
             class="bg-gray-600 p-8 rounded-lg text-center border-4 border-[#1F2937] hover:border-indigo-700 cursor-pointer"
           >
-            <img
-              class="w-1/2 mx-auto"
-              src="./images/Nextjs.png"
-              alt=""
-            />
+            <img class="w-1/2 mx-auto" src="./images/Nextjs.png" alt="" />
             <h4 class="text-white text-lg underline underline-offset-4 my-4">
-            Next.js Complete Course
+              Next.js Complete Course
             </h4>
             <p class="white">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Accusantium aperiam porro molestias! Animi, a omnis?
             </p>
           </div>
-          
-          
+
           <div
             class="bg-gray-600 p-8 rounded-lg text-center border-4 border-[#1F2937] hover:border-indigo-700 cursor-pointer"
           >
-            <img
-              class="w-1/2 mx-auto"
-              src="./images/react.png"
-              alt=""
-            />
+            <img class="w-1/2 mx-auto" src="./images/react.png" alt="" />
             <h4 class="text-white text-lg underline underline-offset-4 my-4">
-            React.js Complete course
+              React.js Complete course
             </h4>
             <p class="white">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Accusantium aperiam porro molestias! Animi, a omnis?
             </p>
           </div>
-          
-          
+
           <div
             class="bg-gray-600 p-8 rounded-lg text-center border-4 border-[#1F2937] hover:border-indigo-700 cursor-pointer"
           >
-            <img
-              class="w-1/2 mx-auto"
-              src="./images/sql.png"
-              alt=""
-            />
+            <img class="w-1/2 mx-auto" src="./images/sql.png" alt="" />
             <h4 class="text-white text-lg underline underline-offset-4 my-4">
               MySQL for database
             </h4>
@@ -192,83 +165,107 @@
         </div>
       </section>
 
-
-
-
-      <section class="bg-slate-900 mb-24 py-16 md:py-48 grid place-content-center text-center">
-        <div class="md:flex justify-center items-center container mx-auto  text-white  gap-5 sm:gap-8 md:gap-12 space-x-48">
-
+      <section
+        class="bg-slate-900 mb-24 py-16 md:py-48 grid place-content-center text-center"
+      >
+        <div
+          class="md:flex justify-center items-center container mx-auto text-white gap-5 sm:gap-8 md:gap-12 space-x-48"
+        >
           <div class="text-lg sm:text-xl md:text-4xl text-center mb-4">
-             <p class="text-2xl text-yellow-500 mb-10 animate-bounce">My Clients</p>
-             <h2>Me taking care of <br> more <span class="underline decoration-orange-500">than 500k</span> <br> Customers</h2>
+            <p class="text-2xl text-yellow-500 mb-10 animate-bounce">
+              My Clients
+            </p>
+            <h2>
+              Me taking care of <br />
+              more
+              <span class="underline decoration-orange-500">than 500k</span>
+              <br />
+              Customers
+            </h2>
           </div>
 
-          <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-8 md:gap-12">
-
+          <div
+            class="grid sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-8 md:gap-12"
+          >
             <div>
-              <img src="./images/client-01.png" alt="">
+              <img src="./images/client-01.png" alt="" />
               <h3>One plus</h3>
             </div>
             <div>
-              <img src="./images/client-02.png" alt="">
+              <img src="./images/client-02.png" alt="" />
               <h3>Tencent</h3>
             </div>
             <div>
-              <img src="./images/client-03.png" class="bg-red-50" alt="">
+              <img src="./images/client-03.png" class="bg-red-50" alt="" />
               <h3>Apple</h3>
             </div>
             <div>
-              <img src="./images/client-04.png" class="bg-red-50" alt="">
+              <img src="./images/client-04.png" class="bg-red-50" alt="" />
               <h3>Apple</h3>
             </div>
-           
+
             <div>
-              <img src="./images/client-05.png" alt="">
+              <img src="./images/client-05.png" alt="" />
               <h3>Lenovo</h3>
             </div>
             <div>
-              <img src="./images/client-06.png" alt="">
+              <img src="./images/client-06.png" alt="" />
               <h3>Huawei</h3>
             </div>
             <div>
-              <img src="./images/client-07.png" alt="">
+              <img src="./images/client-07.png" alt="" />
               <h3>Nexus</h3>
             </div>
             <div>
-              <img src="./images/client-08.png" alt="">
+              <img src="./images/client-08.png" alt="" />
               <h3>Tesla</h3>
             </div>
             <div>
-              <img src="./images/client-09.png" alt="">
+              <img src="./images/client-09.png" alt="" />
               <h3>Brave</h3>
             </div>
-            
           </div>
         </div>
       </section>
 
       <section class="mb-10 bg-[#1F2937] py-16 sm:px-24">
         <div>
-          <h2 class="text-white text-xl text-center sm:text-3xl mb-10">Ask a question</h2>
+          <h2 class="text-white text-xl text-center sm:text-3xl mb-10">
+            Ask a question
+          </h2>
 
           <form>
-            <input type="email" class="mx-auto block w-5/6 sm:w-1/2 mb-10 border-4 h-12 border-orange-800 placeholder:italic placeholder:text-orange-800 px-5" placeholder="Your Email">
+            <input
+              type="email"
+              class="mx-auto block w-5/6 sm:w-1/2 mb-10 border-4 h-12 border-orange-800 placeholder:italic placeholder:text-orange-800 px-5"
+              placeholder="Your Email"
+            />
 
-            <textarea class="block mx-auto w-5/6 sm:1/2 border-2 border-orange-800 h-52 placeholder:italic placeholder:text-orange-800 px-5 py-5" placeholder="Your Question"></textarea>
+            <textarea
+              class="block mx-auto w-5/6 sm:1/2 border-2 border-orange-800 h-52 placeholder:italic placeholder:text-orange-800 px-5 py-5"
+              placeholder="Your Question"
+            ></textarea>
 
-            <button class="block mx-auto bg-green-700 text-xl px-10 py-4 text-white mt-8 rounded hover:bg-green-600 transition">Send now</button>
+            <button
+              class="block mx-auto bg-green-700 text-xl px-10 py-4 text-white mt-8 rounded hover:bg-green-600 transition"
+            >
+              Send now
+            </button>
           </form>
         </div>
       </section>
 
-
       <section class="md:m-32 bg-slate-900">
         <div class="text-white grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-
           <div class="border md:p-10">
             <h5>Basic Plan</h5>
-            <h2>$ <span class="text-white text-xl sm:text-3xl md:text-5xl font-bold">1900</span>/month</h2>
-            <hr class="my-10">
+            <h2>
+              $
+              <span class="text-white text-xl sm:text-3xl md:text-5xl font-bold"
+                >1900</span
+              >/month
+            </h2>
+            <hr class="my-10" />
             <ul class="list-inside list-disc leading-10 text-xl">
               <li>5000 user Activities</li>
               <li>Unlimited Access</li>
@@ -277,13 +274,22 @@
               <li>Figma Source file</li>
               <li>Many More Facilities</li>
             </ul>
-            <button class="mx-auto block bg-green-900 px-5  text-xl mt-10 py-2 rounded-xl hover:bg-green-600 transition"> Purchase </button>
+            <button
+              class="mx-auto block bg-green-900 px-5 text-xl mt-10 py-2 rounded-xl hover:bg-green-600 transition"
+            >
+              Purchase
+            </button>
           </div>
 
           <div class="border md:p-10">
             <h5>Basic Plan</h5>
-            <h2>$ <span class="text-white text-xl sm:text-3xl md:text-5xl font-bold">1900</span>/month</h2>
-            <hr class="my-10">
+            <h2>
+              $
+              <span class="text-white text-xl sm:text-3xl md:text-5xl font-bold"
+                >1900</span
+              >/month
+            </h2>
+            <hr class="my-10" />
             <ul class="list-inside list-disc leading-10 text-xl">
               <li>5000 user Activities</li>
               <li>Unlimited Access</li>
@@ -292,12 +298,21 @@
               <li>Figma Source file</li>
               <li>Many More Facilities</li>
             </ul>
-            <button class="bg-green-900 px-5 px-2 text-xl block mx-auto mt-10 px-4 py-2 rounded-xl hover:bg-green-600 transition"> Purchase </button>
+            <button
+              class="bg-green-900 px-5 px-2 text-xl block mx-auto mt-10 px-4 py-2 rounded-xl hover:bg-green-600 transition"
+            >
+              Purchase
+            </button>
           </div>
           <div class="border md:p-10">
             <h5>Basic Plan</h5>
-            <h2>$ <span class="text-white text-xl sm:text-3xl md:text-5xl font-bold">1900</span>/month</h2>
-            <hr class="my-10">
+            <h2>
+              $
+              <span class="text-white text-xl sm:text-3xl md:text-5xl font-bold"
+                >1900</span
+              >/month
+            </h2>
+            <hr class="my-10" />
             <ul class="list-inside list-disc leading-10 text-xl">
               <li>5000 user Activities</li>
               <li>Unlimited Access</li>
@@ -306,26 +321,41 @@
               <li>Figma Source file</li>
               <li>Many More Facilities</li>
             </ul>
-            <button class="bg-green-900 px-5 px-2 text-xl block mx-auto mt-10 px-4 py-2 rounded-xl hover:bg-green-600 transition"> Purchase </button>
+            <button
+              class="bg-green-900 px-5 px-2 text-xl block mx-auto mt-10 px-4 py-2 rounded-xl hover:bg-green-600 transition"
+            >
+              Purchase
+            </button>
           </div>
         </div>
       </section>
 
-
-      <section class="bg-lime-950 bg-no-repeat py-10 sm:py-16 md:py-20 my-10 sm:my-16 md:my-20 lg:my-32 bg-left" style="background-image: url('./images/subscribe-bg.png');">
-        <div class="sm:flex justify-center items-center text-white gap-10 sm:gap-20 lg:gap-32">
+      <section
+        class="bg-lime-950 bg-no-repeat py-10 sm:py-16 md:py-20 my-10 sm:my-16 md:my-20 lg:my-32 bg-left"
+        style="background-image: url('./images/subscribe-bg.png')"
+      >
+        <div
+          class="sm:flex justify-center items-center text-white gap-10 sm:gap-20 lg:gap-32"
+        >
           <div class="text-center mb-10 sm:mb-0 sm:border-r-4 sm:pr-28">
             <h3 class="text-2xl">Newletter Subscription</h3>
-            <p>Get subscribed to our newsletter & recieve latest lorem updates</p>
+            <p>
+              Get subscribed to our newsletter & recieve latest lorem updates
+            </p>
           </div>
 
           <div class="flex justify-center items-center gap-1">
-            <input class="h-10 border-none px-2" type="email" placeholder="E-mail">
-            <button class="bg-red-900 px-5 py-2 hover:red-600 transition">Subscribe</button>
+            <input
+              class="h-10 border-none px-2"
+              type="email"
+              placeholder="E-mail"
+            />
+            <button class="bg-red-900 px-5 py-2 hover:red-600 transition">
+              Subscribe
+            </button>
           </div>
         </div>
       </section>
-      
     </main>
 
     <footer>
@@ -369,22 +399,17 @@
           </div>
         </div>
 
-        <hr class="my-16">
+        <hr class="my-16" />
 
         <div class="text-white text-left sm:flex justify-between mb-20">
-          <p>&copy; Copyright - 2024 - Designed by <span class="text-green-600">HridoyKhan's team</span></p>
+          <p>
+            &copy; Copyright - 2024 - Designed by
+            <span class="text-green-600">HridoyKhan's team</span>
+          </p>
 
           <p>Privacy Policy | Term of Service</p>
         </div>
-
       </div>
     </footer>
-
-
-
-
-
-
-
   </body>
 </html>
