@@ -1,1 +1,1 @@
-For pracricing
+For practicing
